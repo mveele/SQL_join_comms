@@ -1,18 +1,28 @@
 ```python
-{
-    "tags": [
-        "hide-input",
-    ]
-}
-
 # CHANGE INFO TO RUN ON YOUR LOCAL
 host = "127.0.0.1"
 port = "5432"
 database = "MSDS691"
 # database = 'msds691'
 user = "postgres"
+hide_toggle()
 
 ```
+
+
+
+
+
+<script>
+    function code_toggle_10449554729786641002() {
+        $('div.cell.code_cell.rendered.selected').find('div.input').toggle();
+    }
+
+</script>
+<a href="javascript:code_toggle_10449554729786641002()">Toggle show/hide</a>
+
+
+
 
 
 ```python
@@ -24,8 +34,24 @@ from IPython.core.display import HTML
 
 conn = psycopg2.connect(host=host, port=port, database=database, user=user)
 cur = conn.cursor()
+hide_toggle()
 
 ```
+
+
+
+
+
+<script>
+    function code_toggle_3316904438890839019() {
+        $('div.cell.code_cell.rendered.selected').find('div.input').toggle();
+    }
+
+</script>
+<a href="javascript:code_toggle_3316904438890839019()">Toggle show/hide</a>
+
+
+
 
 
 ```python
@@ -34,14 +60,79 @@ def select_query(query):
     df.replace([None], np.nan, inplace=True)
 
     return df
+hide_toggle()
 
 ```
 
 
+
+
+
+<script>
+    function code_toggle_3816596547659478852() {
+        $('div.cell.code_cell.rendered.selected').find('div.input').toggle();
+    }
+
+</script>
+<a href="javascript:code_toggle_3816596547659478852()">Toggle show/hide</a>
+
+
+
+
+
 ```python
 from IPython.core.display import display, HTML
+from IPython.display import HTML
+import random
 
 
+def hide_toggle(for_next=False):
+    this_cell = """$('div.cell.code_cell.rendered.selected')"""
+    next_cell = this_cell + '.next()'
+    toggle_text = 'Toggle show/hide'  # text shown on toggle link
+    target_cell = this_cell  # target cell to control with toggle
+    js_hide_current = ''  # bit of JS to permanently hide code in current cell (only when toggling next cell)
+    if for_next:
+        target_cell = next_cell
+        toggle_text += ' next cell'
+        js_hide_current = this_cell + '.find("div.input").hide();'
+    js_f_name = 'code_toggle_{}'.format(str(random.randint(1,2**64)))
+    html = """
+        <script>
+            function {f_name}() {{
+                {cell_selector}.find('div.input').toggle();
+            }}
+            {js_hide_current}
+        </script>
+        <a href="javascript:{f_name}()">{toggle_text}</a>
+    """.format(
+        f_name=js_f_name,
+        cell_selector=target_cell,
+        js_hide_current=js_hide_current,
+        toggle_text=toggle_text
+    )
+    return HTML(html)
+hide_toggle()
+
+```
+
+
+
+
+
+<script>
+    function code_toggle_15174699741267159853() {
+        $('div.cell.code_cell.rendered.selected').find('div.input').toggle();
+    }
+
+</script>
+<a href="javascript:code_toggle_15174699741267159853()">Toggle show/hide</a>
+
+
+
+
+
+```python
 def display_side_by_side(dfs: list, captions: list):
     """Display tables side by side to save vertical space
     Input:
@@ -57,14 +148,47 @@ def display_side_by_side(dfs: list, captions: list):
         output += "\xa0\xa0\xa0"
     display(HTML(output))
 
+hide_toggle()
+
 ```
+
+
+
+
+
+<script>
+    function code_toggle_7916845146259203325() {
+        $('div.cell.code_cell.rendered.selected').find('div.input').toggle();
+    }
+
+</script>
+<a href="javascript:code_toggle_7916845146259203325()">Toggle show/hide</a>
+
+
+
 
 
 ```python
 cur.execute(f'''DROP TABLE IF EXISTS names;''')
 cur.execute(f'''DROP TABLE IF EXISTS transactions;''')
+hide_toggle()
 
 ```
+
+
+
+
+
+<script>
+    function code_toggle_6908286799272784620() {
+        $('div.cell.code_cell.rendered.selected').find('div.input').toggle();
+    }
+
+</script>
+<a href="javascript:code_toggle_6908286799272784620()">Toggle show/hide</a>
+
+
+
 
 
 ```python
@@ -108,7 +232,34 @@ VALUES
 cur.execute(create)
 conn.commit()
 
+hide_toggle()
+
 ```
+
+
+
+
+
+<script>
+    function code_toggle_14434524677954648196() {
+        $('div.cell.code_cell.rendered.selected').find('div.input').toggle();
+    }
+
+</script>
+<a href="javascript:code_toggle_14434524677954648196()">Toggle show/hide</a>
+
+
+
+
+### General Join Syntax
+
+SELECT <field> <br>
+FROM TableA A <br>
+[Join Type] JOIN <br>
+TableB B <br>
+ON A.key=B.key <br>
+
+### names table
 
 
 ```python
@@ -170,6 +321,8 @@ df_names
 
 
 
+### transactions table
+
 
 ```python
 query = f'''
@@ -229,14 +382,6 @@ df_transactions
 </div>
 
 
-
-### General Syntax
-
-SELECT <field> <br>
-FROM TableA A <br>
-[Join Type] JOIN <br>
-TableB B <br>
-ON A.key=B.key <br>
 
 ### Inner Join
 
@@ -689,7 +834,23 @@ VALUES
 cur.execute(create)
 conn.commit()
 
+hide_toggle()
 ```
+
+
+
+
+
+<script>
+    function code_toggle_8614821414148573498() {
+        $('div.cell.code_cell.rendered.selected').find('div.input').toggle();
+    }
+
+</script>
+<a href="javascript:code_toggle_8614821414148573498()">Toggle show/hide</a>
+
+
+
 
 ### Select all dob_table
 
@@ -855,6 +1016,8 @@ Image(url= "one_to_one.png")
 
 
 
+### Add long_transactions table
+
 
 ```python
 create = f'''
@@ -876,8 +1039,24 @@ VALUES
 ;'''
 cur.execute(create)
 conn.commit()
+hide_toggle()
 
 ```
+
+
+
+
+
+<script>
+    function code_toggle_14366455303026074232() {
+        $('div.cell.code_cell.rendered.selected').find('div.input').toggle();
+    }
+
+</script>
+<a href="javascript:code_toggle_14366455303026074232()">Toggle show/hide</a>
+
+
+
 
 ### long_transactions table
 
@@ -1064,6 +1243,8 @@ display_side_by_side([df_names, df_long_tran, df_one_many],
 
 ### Many-to-Many
 
+### Add long_amounts table
+
 
 ```python
 create = f'''
@@ -1085,9 +1266,26 @@ VALUES
 ;'''
 cur.execute(create)
 conn.commit()
+hide_toggle()
+
 ```
 
-### long_amounts
+
+
+
+
+<script>
+    function code_toggle_4661624746864317962() {
+        $('div.cell.code_cell.rendered.selected').find('div.input').toggle();
+    }
+
+</script>
+<a href="javascript:code_toggle_4661624746864317962()">Toggle show/hide</a>
+
+
+
+
+### long_amounts table
 
 
 ```python
@@ -1167,18 +1365,12 @@ df_long_amount
 
 
 ```python
-conn.rollback()
-```
-
-
-```python
 query = f'''
 
 SELECT  
 long_transactions.id,
 long_transactions.amount,
 long_amounts.item
-
 FROM long_transactions 
     INNER JOIN long_amounts
         ON (long_transactions.amount = long_amounts.amount)
@@ -1312,5 +1504,21 @@ display_side_by_side([df_long_tran, df_long_amount, df_many_many],
 ```python
 cur.close()
 conn.close()
+hide_toggle()
 
 ```
+
+
+
+
+
+<script>
+    function code_toggle_16034230954638062183() {
+        $('div.cell.code_cell.rendered.selected').find('div.input').toggle();
+    }
+
+</script>
+<a href="javascript:code_toggle_16034230954638062183()">Toggle show/hide</a>
+
+
+
