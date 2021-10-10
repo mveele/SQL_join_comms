@@ -310,11 +310,11 @@ The only difference between one-to-many and many-to-many is that many-to-many ha
 
 Table Transaction with duplicate ids.
 
-<img src="https://github.com/mveele/SQL_join_comms/blob/surbhi33-patch-1/images/Long_trans.png" alt="drawing" width="300"/>
+<img src="https://github.com/mveele/SQL_join_comms/blob/surbhi33-patch-1/images/Long_trans.png" alt="drawing" width="250"/>
 
 Output Table
 
-<img src="https://github.com/mveele/SQL_join_comms/blob/surbhi33-patch-1/images/one2one_out.png" alt="drawing" width="300"/>
+<img src="https://github.com/mveele/SQL_join_comms/blob/surbhi33-patch-1/images/one2one_out.png" alt="drawing" width="200"/>
 
 Here, id =1 duplicated two tables as transaction table had two rows with id=1.
 
