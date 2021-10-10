@@ -310,7 +310,7 @@ The only difference between one-to-many and many-to-many is that many-to-many ha
 
 Table Transaction with duplicate ids.
 
-<img src="https://github.com/mveele/SQL_join_comms/blob/surbhi33-patch-1/images/Long_trans.png" alt="drawing" width="250"/>
+<img src="https://github.com/mveele/SQL_join_comms/blob/surbhi33-patch-1/images/Long_trans.png" alt="drawing" width="200"/>
 
 Output Table
 
