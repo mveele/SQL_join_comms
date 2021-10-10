@@ -240,10 +240,6 @@ ON (names.id = transactions.id)
 <b> Output Table </b>
 
 <img src="https://github.com/mveele/SQL_join_comms/blob/surbhi33-patch-1/images/Inner.png" alt="drawing" width="200"/>
-
-	id	name	      amount
-	 1	Jon Smith	  10
-	 3	Maria Lopez	20
     
 
 <b> Left join example </b>
@@ -263,11 +259,6 @@ ON (names.id = transactions.id)
 <b> Output Table </b>
 
 <img src="https://github.com/mveele/SQL_join_comms/blob/surbhi33-patch-1/images/Left.png" alt="drawing" width="200"/>
-
-	id	name	       amount
-	 1	Jon Smith	   10
-	 2	Sarah Adams	 null
-	 3	Maria Lopez	 20
 
 
 <h2> Three Tables Join  </h2>
@@ -297,11 +288,6 @@ ON (names.id = dob_table.id)
 
 <img src="https://github.com/mveele/SQL_join_comms/blob/surbhi33-patch-1/images/Three.png" alt="drawing" width="200"/>
 
-	id	name	      amount	dob
-	1	Jon Smith	  10	  1982-09-29
-	3	Maria Lopez	20	  1996-02-16
-
-
     
 <h2> One-to-many and Many-to-Many Joins  </h2>
 
@@ -328,7 +314,7 @@ Table Transaction with duplicate ids.
 
 Output Table
 
-<img src="https://github.com/mveele/SQL_join_comms/blob/surbhi33-patch-1/images/one2one_out.png" alt="drawing" width="400"/>
+<img src="https://github.com/mveele/SQL_join_comms/blob/surbhi33-patch-1/images/one2one_out.png" alt="drawing" width="300"/>
 
 Here, id =1 duplicated two tables as transaction table had two rows with id=1.
 
