@@ -328,7 +328,7 @@ Table Transaction with duplicate ids.
 
 Output Table
 
-<img src="https://github.com/mveele/SQL_join_comms/blob/surbhi33-patch-1/images/one2one_out.png" alt="drawing" width="200"/>
+<img src="https://github.com/mveele/SQL_join_comms/blob/surbhi33-patch-1/images/one2one_out.png" alt="drawing" width="400"/>
 
 Here, id =1 duplicated two tables as transaction table had two rows with id=1.
 
