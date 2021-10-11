@@ -72,7 +72,7 @@ JOIN table2 ON table1.column_name = table2.column_name;
 
 Returns records that have matching values in both tables
 
-<img src="https://github.com/mveele/SQL_join_comms/blob/main/images/inner_join.png" alt="drawing" width="200"/>
+<img src="https://github.com/mveele/SQL_join_comms/blob/main/images/inner_join.png" alt="drawing" width="300"/>
 
 
 ```sql
@@ -87,7 +87,7 @@ INNER JOIN table2 ON table1.column_name = table2.column_name;
 
 Returns all records from the left table (table1)and the matched records from the right table (table2).The result is NULL from the right side, if there is no match.
 
-<img src="https://github.com/mveele/SQL_join_comms/blob/main/images/left_join.png" alt="drawing" width="200"/>
+<img src="https://github.com/mveele/SQL_join_comms/blob/main/images/left_join.png" alt="drawing" width="300"/>
 
 
 ```sql
@@ -103,7 +103,7 @@ LEFT JOIN table2 ON table1.column_name = table2.column_name;
 The right Join is similar to left join except that it returns all records from the right table (table2), and the matched records from the left table (table1). The result is NULL from the left side, when there is no match.
 
 
-<img src="https://github.com/mveele/SQL_join_comms/blob/main/images/right_join.png" alt="drawing" width="200"/>
+<img src="https://github.com/mveele/SQL_join_comms/blob/main/images/right_join.png" alt="drawing" width="300"/>
 
 
 ```sql
@@ -118,7 +118,7 @@ RIGHT JOIN table2 ON table1.column_name = table2.column_name;
 
 Returns all records when there is a match in either left (table1) or right (table2) table records.
 
-<img src="https://github.com/mveele/SQL_join_comms/blob/main/images/full_join.png" alt="drawing" width="200"/>
+<img src="https://github.com/mveele/SQL_join_comms/blob/main/images/full_join.png" alt="drawing" width="300"/>
 
 
 ```sql
@@ -251,7 +251,7 @@ ON (names.id = transactions.id)
 
 <b> Output Table </b>
 
-<img src="https://github.com/mveele/SQL_join_comms/blob/surbhi33-patch-1/images/Inner.png" alt="drawing" width="200"/>
+<img src="https://github.com/mveele/SQL_join_comms/blob/surbhi33-patch-1/images/Inner.png" alt="drawing" width="300"/>
 
 	id	name	      amount
 	 1	Jon Smith	  10
@@ -274,7 +274,7 @@ ON (names.id = transactions.id)
 
 <b> Output Table </b>
 
-<img src="https://github.com/mveele/SQL_join_comms/blob/surbhi33-patch-1/images/Left.png" alt="drawing" width="200"/>
+<img src="https://github.com/mveele/SQL_join_comms/blob/surbhi33-patch-1/images/Left.png" alt="drawing" width="300"/>
 
 	id	name	       amount
 	 1	Jon Smith	   10
@@ -307,7 +307,7 @@ ON (names.id = dob_table.id)
 
 <b> Output Table </b>
 
-<img src="https://github.com/mveele/SQL_join_comms/blob/surbhi33-patch-1/images/Three.png" alt="drawing" width="200"/>
+<img src="https://github.com/mveele/SQL_join_comms/blob/surbhi33-patch-1/images/Three.png" alt="drawing" width="300"/>
 
 	id	name	      amount	dob
 	1	Jon Smith	  10	  1982-09-29
@@ -328,7 +328,7 @@ The query to do manipulation stays same but the output would change in which the
 Refer to below image for understanding.
 
 <img src="https://github.com/mveele/SQL_join_comms/blob/surbhi33-patch-1/images/one_to_one.png" alt="drawing" 
-width="200"/>
+width="800"/>
      
 The only difference between one-to-many and many-to-many is that many-to-many has duplicate rows in both tables joined due to which the total rows in output table will have cartesian product of number of fuplicate rows in both tables.
 
