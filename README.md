@@ -348,7 +348,7 @@ Here, id =1 duplicated two tables as transaction table had two rows with id=1.
 
 
 <a id="Notebook_Link"></a>
-<h2> Jupter Notebook  </h2>
+<h2> Jupyter Notebook  </h2>
 
 
 
