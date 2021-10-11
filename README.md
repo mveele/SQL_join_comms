@@ -18,14 +18,23 @@ For additional information, see our [Jupyter Notebook](https://github.com/mveele
 <h3> Index </h3>
 
 [Structured Query Langauge (SQL)](#SQL)  </br>
+
 [Types of Joins](#Joins)</br>
+
 [Python Packages and Functions](#package)</br>
+
 [Connection with database](#Python)</br>
+
 [Tables Used and Creation](#tables)</br>
+
 [Two Tables Join](#examples2)</br>
+
 [Three Tables Join](#example3)</br>
+
 [One-to-many and Many-to-Many Joins](#ex_otm_mtm)</br>
+
 [Jupter Notebook](#Notebook_Link)</br>
+
 [Practice Material](#practice_Link)</br>
 
 <a id="SQL"></a>
