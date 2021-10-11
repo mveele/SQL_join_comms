@@ -17,25 +17,25 @@ For additional information, see our [Jupyter Notebook](https://github.com/mveele
 
 <h3> Index </h3>
 
-[Structured Query Langauge (SQL)](#SQL)  </br>
+1. [Structured Query Langauge (SQL)](#SQL)  </br>
 
-[Types of Joins](#Joins)</br>
+2. [Types of Joins](#Joins)</br>
 
-[Python Packages and Functions](#package)</br>
+3. [Python Packages and Functions](#package)</br>
 
-[Connection with database](#Python)</br>
+4. [Connection with database](#Python)</br>
 
-[Tables Used and Creation](#tables)</br>
+5. [Tables Used and Creation](#tables)</br>
 
-[Two Tables Join](#examples2)</br>
+6. [Two Tables Join](#examples2)</br>
 
-[Three Tables Join](#example3)</br>
+7. [Three Tables Join](#example3)</br>
 
-[One-to-many and Many-to-Many Joins](#ex_otm_mtm)</br>
+8. [One-to-many and Many-to-Many Joins](#ex_otm_mtm)</br>
 
-[Jupter Notebook](#Notebook_Link)</br>
+9. [Jupter Notebook](#Notebook_Link)</br>
 
-[Practice Material](#practice_Link)</br>
+10. [Practice Material](#practice_Link)</br>
 
 <a id="SQL"></a>
 <h3> Structured Query Langauge (SQL) </h3>
