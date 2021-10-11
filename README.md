@@ -67,7 +67,7 @@ For more info and examples using concrete data, please see our [notebook](https:
 
 There are 3 ways in which relationship between the two table can be established.
 
-<img src="https://github.com/mveele/SQL_join_comms/blob/main/images/one_to_one.png" alt="drawing" width="200"/>
+<img src="https://github.com/mveele/SQL_join_comms/blob/main/images/one_to_one.png" alt="drawing" width="600"/>
 <br>
 
 1. One-to-one: There is distinct foreign key value in one table has only one reference in the refernced key in another table
