@@ -127,7 +127,6 @@ SELECT name, dust_costs.cost AS dust_cost
   FULL OUTER JOIN basic_cards on dust_costs.card_id = basic_cards.card_id;
 ```
 
-<br>
 
 <a id="package"></a>
 <h2> Python Packages and Functions </h2>
@@ -368,4 +367,3 @@ For further practice, you can refer to:
 A. [41 Essential SQL Questions](https://www.toptal.com/sql/interview-questions)
 
 B. [SQL HackerRank Challenges](https://www.hackerrank.com/domains/sql)
-
