@@ -311,7 +311,7 @@ The query to do manipulation stays same but the output would change in which the
 Refer to below image for understanding.
 
 <img src="https://github.com/mveele/SQL_join_comms/blob/surbhi33-patch-1/images/one_to_one.png" alt="drawing" 
-width="600"/>
+width="800"/>
      
 The only difference between one-to-many and many-to-many is that many-to-many has duplicate rows in both tables joined due to which the total rows in output table will have cartesian product of number of fuplicate rows in both tables.
 
