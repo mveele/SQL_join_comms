@@ -12,7 +12,7 @@ The goal is to:
 1.  Introduce basic types of joins and provide examples of a few tables manipulation with SQL queries. 
 2.  Cover how to make a connection with the database through Python which is the platform we are using to access relational tables.
 3.  Introduce three tables join
-4.  Discuss difference in results of one-to-many and many-to-many type of joins.
+4.  Discuss the difference in results of the one-to-many and many-to-many types of joins.
 
 For additional information, see our [Jupyter Notebook](https://github.com/mveele/SQL_join_comms/blob/main/comms_project.ipynb).
 
@@ -359,9 +359,9 @@ It has one example each for all types of joins and also covers three tables join
 
 <h2> Summary </h2>
 
-We covered background of relations joins and why it is essential in real world. We started with basics of types of joins and further explained what is SQL. Further, we got familiar with SQL syntax for basic queries of joins and then deep dived into each join with example of two tables and their respective queries. We tried to go further into complexity of three tables join and also explained wuth visuals difference in outcomes in cases of duplicate values in common column i.e. key between tables.
+We covered the background of relations joins and why it is essential in the real world. We started with the basics of types of joins and explained what is SQL. Further, we got familiar with SQL syntax for basic queries of joins and then deep-dived into each join with examples of two tables and their respective queries. Often we need to join more than two tables. Hence, We went into the complexity of three tables join and also explained with visuals difference in outcomes in cases of duplicate values in the common column i.e. key between tables.
 
-Finally, SQL Joins are very useful tool required for day-to-day tasks of fetching information from data divided across many tables in database. Examples above introduces us to the basics of joins which can be consildated by going through notebook and few practice materials mentioned below.
+Finally, SQL Joins are a very useful tool required for day-to-day tasks of fetching information from data divided across many tables in the database. The examples above introduce us to the basics of joins which can be consolidated by going through the notebook and few practice materials mentioned below.
 
 
 <h2> External Videos for reference: </h2>
