@@ -366,9 +366,9 @@ Finally, SQL Joins are very useful tool required for day-to-day tasks of fetchin
 
 <h2> External Videos for reference: </h2>
 
-A) Joins: [SQL Joins](https://www.youtube.com/watch?v=2HVMiPPuPIM)
+A. Joins: [SQL Joins](https://www.youtube.com/watch?v=2HVMiPPuPIM)
 
-B) SQL Basics: [SQL in 1 Hour](https://www.youtube.com/watch?v=9Pzj7Aj25lw)
+B. SQL Basics: [SQL in 1 Hour](https://www.youtube.com/watch?v=9Pzj7Aj25lw)
 
 <a id="practice_Link"></a>    
 <h2> Practice Material  </h2>
