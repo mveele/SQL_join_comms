@@ -361,6 +361,8 @@ It has one example each for all types of joins and also covers three tables join
 
 We covered background of relations joins and why it is essential in real world. We started with basics of types of joins and further explained what is SQL. Further, we got familiar with SQL syntax for basic queries of joins and then deep dived into each join with example of two tables and their respective queries. We tried to go further into complexity of three tables join and also explained wuth visuals difference in outcomes in cases of duplicate values in common column i.e. key between tables.
 
+Finally, SQL Joins are very usefule tool required day-t-day to fetch information from data divided across many tables in database. Examples above introduces us to the basics of joins which can be consildated by going through notebook and few practice materials mentioned below.
+
 
 <h2> External Videos for reference: </h2>
 
