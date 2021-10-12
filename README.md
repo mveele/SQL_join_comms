@@ -11,7 +11,8 @@ In relational database systems, vast information is often divided and stored int
 The goal is to:
 1.  Introduce basic types of joins and provide examples of a few tables manipulation with SQL queries. 
 2.  Cover how to make a connection with the database through Python which is the platform we are using to access relational tables.
-3.  And will also introduce three tables join
+3.  Introduce three tables join
+4.  Discuss difference in results of one-to-many and many-to-many type of joins.
 
 For additional information, see our [Jupyter Notebook](https://github.com/mveele/SQL_join_comms/blob/main/comms_project.ipynb).
 
