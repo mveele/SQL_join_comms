@@ -357,7 +357,12 @@ For more info and examples using concrete data, please see our [Notebook](https:
 
 It has one example each for all types of joins and also covers three tables join. It also gives examples of one to many and many to one joins as well.
 
-<h3> External Videos for reference: </h3>
+<h2> Summary </h2>
+
+We covered background of relations joins and why it is essential in real world. We started with basics of types of joins and further explained what is SQL. Further, we got familiar with SQL syntax for basic queries of joins and then deep dived into each join with example of two tables and their respective queries. We tried to go further into complexity of three tables join and also explained wuth visuals difference in outcomes in cases of duplicate values in common column i.e. key between tables.
+
+
+<h2> External Videos for reference: </h2>
 
 A) Joins: [SQL Joins](https://www.youtube.com/watch?v=2HVMiPPuPIM)
 
