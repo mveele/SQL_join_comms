@@ -49,7 +49,7 @@ We are using here Postgres SQL language.
 
 General Syntax:
 
-This query selects all rows from 'transactions' where values in column 'id' is 10.
+This query selects all rows from 'transactions' where values in column 'id' = 10.
 
 ```sql
 SELECT * FROM transactions WHERE id = 10;
@@ -236,7 +236,7 @@ VALUES
 
 <b> Inner join example </b>
 
-Tables name and transactions are inner joined based on common column 'id' and columns from both tables: id, name, amount are fetched for all rows matched in both tables.
+Table names and transactions are inner joined based on common column 'id' and columns from both tables: id, name, amount are fetched for all rows matched in both tables.
 
 ```sql
 SELECT  
@@ -259,7 +259,7 @@ ON (names.id = transactions.id)
 
 <b> Left join example </b>
 
-Tables name and transactions are left joined based on common column 'id' and columns from both tables: id, name, amount are fetched for all rows matched in the left table.
+Table names and transactions are left joined based on common column 'id' and columns from both tables: id, name, amount are fetched for all rows matched in the left table.
 
 ```sql
 SELECT  
