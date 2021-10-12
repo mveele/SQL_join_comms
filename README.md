@@ -4,6 +4,8 @@
 
 In relational database systems, vast information is often divided and stored into multiple tables to achieve operational efficiencies. These tables are named relational tables as they have one-to-one or one-to-many relationships between them. A relational join is a command in Structured Query Language (SQL) to extract meaningful information. It combines multiple relational tables by column and returns a new output table with related rows. The column(s) used to combine these tables are called keys.
 
+The information extracted is dependent on the type of relational join used. SQL provides four different types of joins named inner, full outer, left, and right outer join that can handle all possible forms of retrieval. Each type filters data that does or doesn’t match on keys differently. 
+
 
 
 <h3> Objective </h3>
@@ -232,8 +234,7 @@ VALUES
 <a id="examples2"></a>
 <h2> Two Tables Join  </h2>
 
-
-
+There are five main types of joins in SQL; inner, full outer, left, right outer and cross join.
 
 <b> Inner join example </b>
 
