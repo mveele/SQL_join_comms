@@ -8,9 +8,9 @@ In relational database systems, vast information is often divided and stored int
 
 <h3> Objective </h3>
 
-Goal is to:
-1.  Introduce basic types of joins and provide examples of few tables manipulation with SQL queries. 
-2.  Cover how to make connection with database through python which is the platform we are using to access relational tables.
+The goal is to:
+1.  Introduce basic types of joins and provide examples of a few tables manipulation with SQL queries. 
+2.  Cover how to make a connection the with database through python which is the platform we are using to access relational tables.
 3.  And will also introduce three tables join
 
 For additional information, see our [Jupyter Notebook](https://github.com/mveele/SQL_join_comms/blob/main/comms_project.ipynb).
@@ -42,8 +42,8 @@ For additional information, see our [Jupyter Notebook](https://github.com/mveele
 
 
 SQL (Structured Query Language) is a standardized programming language that's used to manage relational databases and perform various operations on the data in them.
-The uses of SQL include modifying database table and index structures; adding, updating and deleting rows of data; and retrieving subsets of information from within a database.
-ommonly used SQL statements include select, add, insert, update, delete, create, alter and truncate.
+The uses of SQL include modifying database table and index structures; adding, updating, and deleting rows of data; and retrieving subsets of information from within a database.
+Commonly used SQL statements include select, add, insert, update, delete, create, alter and truncate.
 
 We are using here Postges SQL language.
 
@@ -85,7 +85,7 @@ INNER JOIN table2 ON table1.column_name = table2.column_name;
 
 <h3> Left Join </h3>
 
-Returns all records from the left table (table1)and the matched records from the right table (table2).The result is NULL from the right side, if there is no match.
+Returns all records from the left table (table1) and the matched records from the right table (table2). The result is NULL from the right side if there is no match.
 
 <img src="https://github.com/mveele/SQL_join_comms/blob/main/images/left_join.png" alt="drawing" width="300"/>
 
@@ -100,7 +100,7 @@ LEFT JOIN table2 ON table1.column_name = table2.column_name;
 
 <h3> Right Join </h3>
 
-The right Join is similar to left join except that it returns all records from the right table (table2), and the matched records from the left table (table1). The result is NULL from the left side, when there is no match.
+The right Join is similar to the left join except that it returns all records from the right table (table2), and the matched records from the left table (table1). The result is NULL from the left side when there is no match.
 
 
 <img src="https://github.com/mveele/SQL_join_comms/blob/main/images/right_join.png" alt="drawing" width="300"/>
@@ -151,14 +151,14 @@ Created Functions
 
 
 
-A. Connect to database with host name, database name and user credentials and create a cursor
+A. Connect to the database with host name, database name and user credentials and create a cursor
 
 ```python
 conn = psycopg2.connect(host=host, port=port, database=database, user=user)
 cur = conn.cursor()
 ```
 
-B. Fetching table and storing as pandas dataframe
+B. Fetching a table and storing it as a pandas dataframe
 
 ```python
 df = pd.read_sql_query(query, conn, coerce_float=False)
@@ -259,7 +259,7 @@ ON (names.id = transactions.id)
 
 <b> Left join example </b>
 
-Tables name and transactions are inner joined based on common column 'id' and columns from both tables: id, name, amount are fetched for all rows matched in both tables.
+Tables name and transactions are left joined based on common column 'id' and columns from both tables: id, name, amount are fetched for all rows matched in the left table.
 
 ```sql
 SELECT  
@@ -288,7 +288,7 @@ ON (names.id = transactions.id)
 
 <b> Inner join example </b>
 
-Tables name ,transactions and dob are inner joined based on common column 'id' and columns from all three tables tables: id, name, amount and dob are fetched for all rows matched in both tables.
+Tables name, transactions, and dob are inner joined based on common column 'id' and columns from all three tables tables: id, name, amount and dob are fetched for all rows matched in both tables.
 
 ```sql
 SELECT  
@@ -320,16 +320,16 @@ ON (names.id = dob_table.id)
 
     
 
-So far, we have seen one-to-one joins means there was no duplicate of ids in any of table (no two rows have same id). But in reality, there is possibility of an id having multiple records in a table. 
+So far, we have seen one-to-one joins means there was no duplicate of ids in any table (no two rows have the same id). But in reality, there is a possibility of an id having multiple records in a table. 
 
-The query to do manipulation stays same but the output would change in which the rows will be returned as many times as ids are duplicated in the tables. 
+The query to do manipulation stays the same but the output would change in which the rows will be returned as many times as ids are duplicated in the tables. 
 
-Refer to below image for understanding.
+Refer to the image below:
 
 <img src="https://github.com/mveele/SQL_join_comms/blob/surbhi33-patch-1/images/one_to_one.png" alt="drawing" 
 width="800"/>
      
-The only difference between one-to-many and many-to-many is that many-to-many has duplicate rows in both tables joined due to which the total rows in output table will have cartesian product of number of fuplicate rows in both tables.
+The only difference between one-to-many and many-to-many is that many-to-many has duplicate rows in both tables joined due to which the total rows in output table will have a cartesian product of the number of duplicate rows in both tables.
 
 <b> Example of One-to-Many </b> 
 
