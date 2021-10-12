@@ -10,7 +10,7 @@ In relational database systems, vast information is often divided and stored int
 
 The goal is to:
 1.  Introduce basic types of joins and provide examples of a few tables manipulation with SQL queries. 
-2.  Cover how to make a connection the with database through python which is the platform we are using to access relational tables.
+2.  Cover how to make a connection with the database through Python which is the platform we are using to access relational tables.
 3.  And will also introduce three tables join
 
 For additional information, see our [Jupyter Notebook](https://github.com/mveele/SQL_join_comms/blob/main/comms_project.ipynb).
@@ -33,7 +33,7 @@ For additional information, see our [Jupyter Notebook](https://github.com/mveele
 
 8. [One-to-many and Many-to-Many Joins](#ex_otm_mtm)</br>
 
-9. [Jupter Notebook](#Notebook_Link)</br>
+9. [Jupyter Notebook](#Notebook_Link)</br>
 
 10. [Practice Material](#practice_Link)</br>
 
@@ -45,11 +45,11 @@ SQL (Structured Query Language) is a standardized programming language that's us
 The uses of SQL include modifying database table and index structures; adding, updating, and deleting rows of data; and retrieving subsets of information from within a database.
 Commonly used SQL statements include select, add, insert, update, delete, create, alter and truncate.
 
-We are using here Postges SQL language.
+We are using here Postgres SQL language.
 
 General Syntax:
 
-This query will select all rows from 'transactions' where values in column 'id' is 10.
+This query selects all rows from 'transactions' where values in column 'id' is 10.
 
 ```sql
 SELECT * FROM transactions WHERE id = 10;
@@ -100,7 +100,7 @@ LEFT JOIN table2 ON table1.column_name = table2.column_name;
 
 <h3> Right Join </h3>
 
-The right Join is similar to the left join except that it returns all records from the right table (table2), and the matched records from the left table (table1). The result is NULL from the left side when there is no match.
+The right join is similar to the left join except that it returns all records from the right table (table2), and the matched records from the left table (table1). The result is NULL from the left side when there is no match.
 
 
 <img src="https://github.com/mveele/SQL_join_comms/blob/main/images/right_join.png" alt="drawing" width="300"/>
@@ -138,7 +138,7 @@ In-Built Packages
 1. <i><u> psycopg2 </u></i> - for making Python connection with database
 2.<i><u>  pandas </u></i>- for manipulation 
 3. <i><u>   numpy </u></i>- for basic operations
-4. <i><u>  IPython.core.display </u></i>- for displaying table visuals in notebook
+4. <i><u>  IPython.core.display </u></i>- for displaying table visuals in the notebook
 
 Created Functions
 1. <i><u>  display_side_by_side</u></i> - for dsiplaying tables using html side by side.
@@ -181,9 +181,9 @@ conn.close()
 
 
 
-Three tables are used in notebook named: names, transactions, dob 
+Three tables are used in the notebook named: names, transactions, dob 
 
-<b> Table : Names </b>
+<b> Table: Names </b>
 
 
 	id	name
@@ -192,7 +192,7 @@ Three tables are used in notebook named: names, transactions, dob
 	3	Maria Lopez     
 
 
-<b> Table : Transactions </b>
+<b> Table: Transactions </b>
 
 
 	id	amount
@@ -201,7 +201,7 @@ Three tables are used in notebook named: names, transactions, dob
 	7	50
 
 
-<b> Table : Dob </b>
+<b> Table: Dob </b>
 
 
 	id	dob
@@ -288,7 +288,7 @@ ON (names.id = transactions.id)
 
 <b> Inner join example </b>
 
-Tables name, transactions, and dob are inner joined based on common column 'id' and columns from all three tables tables: id, name, amount and dob are fetched for all rows matched in both tables.
+Tables name, transactions, and dob are inner joined based on common column 'id' and columns from all three tables: id, name, amount, and dob are fetched for all rows matched in both tables.
 
 ```sql
 SELECT  
@@ -329,7 +329,7 @@ Refer to the image below:
 <img src="https://github.com/mveele/SQL_join_comms/blob/surbhi33-patch-1/images/one_to_one.png" alt="drawing" 
 width="800"/>
      
-The only difference between one-to-many and many-to-many is that many-to-many has duplicate rows in both tables joined due to which the total rows in output table will have a cartesian product of the number of duplicate rows in both tables.
+The only difference between one-to-many and many-to-many is that many-to-many has duplicate rows in both tables joined due to which the total rows in the output table will have a cartesian product of the number of duplicate rows in both tables.
 
 <b> Example of One-to-Many </b> 
 
@@ -341,7 +341,7 @@ Output Table
 
 <img src="https://github.com/mveele/SQL_join_comms/blob/surbhi33-patch-1/images/one2one_out.png" alt="drawing" width="200"/>
 
-Here, id =1 duplicated two tables as transaction table had two rows with id=1.
+Here, id =1 duplicated two tables as the transaction table had two rows with id=1.
 
 
 
@@ -354,7 +354,7 @@ Here, id =1 duplicated two tables as transaction table had two rows with id=1.
 
 For more info and examples using concrete data, please see our [Notebook](https://github.com/mveele/SQL_join_comms/blob/main/comms_project.ipynb).
 
-It has one example each for all types of joins and also covers three tables join. It further gives example of one to many an many to one joins as well.
+It has one example each for all types of joins and also covers three tables join. It also gives examples of one to many and many to one joins as well.
 
 <a id="practice_Link"></a>    
 <h2> Practice Material  </h2>
