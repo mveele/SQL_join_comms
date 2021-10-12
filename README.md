@@ -364,7 +364,7 @@ We covered the background of relations joins and why it is essential in the real
 Finally, SQL Joins are a very useful tool required for day-to-day tasks of fetching information from data divided across many tables in the database. The examples above introduce us to the basics of joins which can be consolidated by going through the notebook and few practice materials mentioned below.
 
 
-<h2> External Videos for reference: </h2>
+<h2> External videos for reference: </h2>
 
 A. Joins: [SQL Joins](https://www.youtube.com/watch?v=2HVMiPPuPIM)
 
