@@ -357,9 +357,14 @@ For more info and examples using concrete data, please see our [Notebook](https:
 
 It has one example each for all types of joins and also covers three tables join. It also gives examples of one to many and many to one joins as well.
 
+<h3> External Videos for reference: </h3>
+
+A) Joins: [SQL Joins](https://www.youtube.com/watch?v=2HVMiPPuPIM)
+
+B) SQL Basics: [SQL in 1 Hour](https://www.youtube.com/watch?v=9Pzj7Aj25lw)
+
 <a id="practice_Link"></a>    
 <h2> Practice Material  </h2>
-
 
 
 
