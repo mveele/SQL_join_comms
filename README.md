@@ -69,7 +69,7 @@ JOIN table2 ON table1.column_name = table2.column_name;
 <a id="Joins"></a>
 <h2> Types of Joins </h2>
 
-
+There are five main types of joins in SQL; inner, full outer, left, right outer, and cross join.
 
 <h3> Inner Join </h3>
 
@@ -250,8 +250,6 @@ VALUES
 <a id="examples2"></a>
 <h2> Two Tables Join  </h2>
 
-There are five main types of joins in SQL; inner, full outer, left, right outer and cross join.
-
 <b> Inner join example </b>
 
 Table names and transactions are inner joined based on common column 'id' and columns from both tables: id, name, amount are fetched for all rows matched in both tables.
@@ -362,7 +360,7 @@ Output Table
 Here, id =1 duplicated two tables as the transaction table had two rows with id=1.
 
 
-For many-to-many example, see our [Jupyter Notebook](https://github.com/mveele/SQL_join_comms/blob/main/comms_project.ipynb).
+For many-to-many examples, see our [Jupyter Notebook](https://github.com/mveele/SQL_join_comms/blob/main/comms_project.ipynb).
 
 
 <a id="Notebook_Link"></a>
