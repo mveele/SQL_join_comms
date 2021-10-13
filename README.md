@@ -1,4 +1,4 @@
-<h1> Relational Join </h1>
+<h1> Relational Joins </h1>
 
 <h3> Background </h3>
 
@@ -129,6 +129,22 @@ SELECT column_name(s)
 FROM table1
 FULL OUTER JOIN table2 ON table1.column_name = table2.column_name;
 ```
+
+<br>
+
+<h3> Cross Join </h3>
+
+Returns all combinations of records from both left (table1) and right (table2) table records as the cartesian product of rows of two tables.
+
+<img src="https://github.com/mveele/SQL_join_comms/blob/main/images/cross_join.png" alt="drawing" width="300"/>
+
+
+```sql
+SELECT column_name(s)
+FROM table1
+CROSS JOIN table2;
+```
+
 
 
 <a id="package"></a>
