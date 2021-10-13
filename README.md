@@ -125,9 +125,9 @@ Returns all records when there is a match in either left (table1) or right (tabl
 
 
 ```sql
-SELECT name, dust_costs.cost AS dust_cost
-  FROM dust_costs
-  FULL OUTER JOIN basic_cards on dust_costs.card_id = basic_cards.card_id;
+SELECT column_name(s)
+FROM table1
+FULL OUTER JOIN table2 ON table1.column_name = table2.column_name;
 ```
 
 
