@@ -136,7 +136,7 @@ FULL OUTER JOIN table2 ON table1.column_name = table2.column_name;
 
 Returns all combinations of records from both left (table1) and right (table2) table records as the cartesian product of rows of two tables.
 
-<img src="https://github.com/mveele/SQL_join_comms/blob/main/images/cross_join.png" alt="drawing" width="350"/>
+<img src="https://github.com/mveele/SQL_join_comms/blob/main/images/cross_join.png" alt="drawing" width="300"/>
 
 
 ```sql
