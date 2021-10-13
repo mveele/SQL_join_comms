@@ -136,7 +136,7 @@ FULL OUTER JOIN table2 ON table1.column_name = table2.column_name;
 
 Returns all combinations of records from both left (table1) and right (table2) table records as the cartesian product of rows of two tables.
 
-<img src="https://github.com/mveele/SQL_join_comms/blob/main/images/cross_join.png" alt="drawing" width="300"/>
+<img src="https://github.com/mveele/SQL_join_comms/blob/main/images/cross_join.png" alt="drawing" width="400"/>
 
 
 ```sql
@@ -145,7 +145,7 @@ FROM table1
 CROSS JOIN table2;
 ```
 
-
+For additional information, see our [Jupyter Notebook](https://github.com/mveele/SQL_join_comms/blob/main/comms_project.ipynb).
 
 <a id="package"></a>
 <h2> Python Packages and Functions </h2>
@@ -362,6 +362,7 @@ Output Table
 Here, id =1 duplicated two tables as the transaction table had two rows with id=1.
 
 
+For many-to-many example, see our [Jupyter Notebook](https://github.com/mveele/SQL_join_comms/blob/main/comms_project.ipynb).
 
 
 <a id="Notebook_Link"></a>
